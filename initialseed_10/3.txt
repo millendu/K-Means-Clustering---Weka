@@ -1,0 +1,64 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 16 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 10
+Relation:     Wholesalecustomersdata-weka.filters.unsupervised.attribute.Remove-R8
+Instances:    440
+Attributes:   7
+              Channel
+              Region
+              Fresh
+              Milk
+              Grocery
+              Frozen
+              Detergents_Paper
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 9
+Within cluster sum of squared errors: 9.402584164314082
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                Cluster#
+Attribute           Full Data          0          1          2          3          4          5          6          7          8          9         10         11         12         13         14         15
+                        (440)       (27)       (10)        (5)       (25)       (59)       (25)       (41)       (25)       (36)        (3)        (5)       (27)      (110)        (9)       (24)        (9)
+=============================================================================================================================================================================================================
+Channel                1.3227          1          2          2          2          1          1          1          2          2          1          2          2          1          1          1          2
+Region                 2.5432          2          3          3          3          1          3          3          3        1.5     2.6667        2.8          3          3          3          3          3
+Fresh              12000.2977 10870.2963    27200.4     7454.6    3419.72 12902.2542   15489.24 26871.2683   12523.76  6209.4722 60571.6667      25603  4838.9259  6605.8818 50679.1111   4481.625  8260.3333
+Milk                5796.2659   1767.963     7222.4    24308.4     7637.6  3870.2034    3443.52  2976.7805    5551.48 10104.3611 30120.3333    43460.6  9562.8148  2089.4545  6292.1111   6982.125      17666
+Grocery             7951.2773  4053.6296    10710.9    23661.8   10331.72  4026.1356    2973.88  3753.6829    7957.44   15983.25 17314.6667    61472.2 17482.5926  2415.7364  7764.4444  9080.1667 31156.6667
+Frozen              3071.9318  3703.4074     1734.7     1875.2     1375.6   3127.322   10992.44  2539.7561    1464.08     2101.5 38049.3333       2636  1306.2593  1775.4455 11236.3333       1790  1428.1111
+Detergents_Paper    2881.4932   453.4815     3716.3     5980.6    4737.56   950.5254     531.08    653.122    2767.64       7493       2153    29974.2  7956.8148   448.7818   888.2222  2641.1667 15902.3333
+
+
+
+
+Time taken to build model (full training data) : 0.06 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+ 0       27 (  6%)
+ 1       10 (  2%)
+ 2        5 (  1%)
+ 3       25 (  6%)
+ 4       59 ( 13%)
+ 5       25 (  6%)
+ 6       41 (  9%)
+ 7       25 (  6%)
+ 8       36 (  8%)
+ 9        3 (  1%)
+10        5 (  1%)
+11       27 (  6%)
+12      110 ( 25%)
+13        9 (  2%)
+14       24 (  5%)
+15        9 (  2%)
+

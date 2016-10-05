@@ -1,0 +1,58 @@
+=== Run information ===
+
+Scheme:weka.clusterers.SimpleKMeans -N 10 -A "weka.core.EuclideanDistance -R first-last" -I 500 -S 5
+Relation:     Wholesalecustomersdata-weka.filters.unsupervised.attribute.Remove-R8
+Instances:    440
+Attributes:   7
+              Channel
+              Region
+              Fresh
+              Milk
+              Grocery
+              Frozen
+              Detergents_Paper
+Test mode:evaluate on training data
+
+=== Model and evaluation on training set ===
+
+
+kMeans
+======
+
+Number of iterations: 26
+Within cluster sum of squared errors: 10.956010995185224
+Missing values globally replaced with mean/mode
+
+Cluster centroids:
+                                Cluster#
+Attribute           Full Data          0          1          2          3          4          5          6          7          8          9
+                        (440)        (6)        (4)      (125)       (71)       (29)       (21)       (59)       (36)       (27)       (62)
+===========================================================================================================================================
+Channel                1.3227          2          1          1          2          2          1          1          2          1          1
+Region                 2.5432     2.8333       2.75          3          3          3          3          1        1.5          2          3
+Fresh              12000.2977      21350   48257.25   5531.808 10332.8451  6177.2759 43265.9524 12902.2542  6209.4722 10870.2963 18837.0323
+Milk                5796.2659 39710.3333   23362.75   3030.432  6792.3521  15085.069  4743.2857  3870.2034 10104.3611   1767.963  2914.0806
+Grocery             7951.2773 58864.8333    13501.5    3462.24 10324.6197 22627.9655   5348.381  4026.1356   15983.25  4053.6296  3784.2742
+Frozen              3071.9318  2202.6667   37289.25    1746.48  1410.7324  1573.7586  6517.7143   3127.322     2101.5  3703.4074  5292.5161
+Detergents_Paper    2881.4932      29017     1632.5    815.592  4239.6197  9910.5862   716.2381   950.5254       7493   453.4815   705.5161
+
+
+
+
+Time taken to build model (full training data) : 0.12 seconds
+
+=== Model and evaluation on training set ===
+
+Clustered Instances
+
+ 0        6 (  1%)
+ 1        4 (  1%)
+ 2      125 ( 28%)
+ 3       71 ( 16%)
+ 4       29 (  7%)
+ 5       21 (  5%)
+ 6       59 ( 13%)
+ 7       36 (  8%)
+ 8       27 (  6%)
+ 9       62 ( 14%)
+
